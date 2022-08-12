@@ -1,0 +1,174 @@
+:root {
+    --pink: #F1C0CC;
+    --black: #212020;
+    --green: #7AFF80;
+}
+/*font-family: 'JetBrains Mono', monospace;*/
+/*font-family: 'Josefin Sans', sans-serif;*/
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);   
+    grid-template-areas: 
+    "a a a a a a b b b b"
+    "c c c d d d d e e e"
+    "f f f f g g g g g g"
+    "h h h h i i i j j j";                   
+}
+
+/* NAVIGARION Section */
+    nav {
+        background-color: white;
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 25px 30px 20px;
+        
+       
+        
+    }
+
+    .navigation-container {
+        display: flex;
+        justify-content: space-between;
+        
+
+    }
+
+    nav a {
+        text-decoration: none;
+        font-weight: 500;  
+        color: var(--black); 
+        font-size: 1em;
+        
+
+    }
+
+    .logo{
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.4em;
+        
+            
+        }
+    
+        i {
+            transform: rotate(20deg);
+            vertical-align: middle;
+            width: 10px;
+            height: 18px;
+            padding-bottom: 6px;
+            padding-right: 18px;
+            
+            
+           
+        }
+        
+    
+
+/* HEADER Section */
+    .header {
+        grid-area: a;
+        background-color: black;
+        height: 1fr;
+        text-align: center;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+
+    
+
+    h1 {
+        color: var(--pink);
+        padding-bottom: 80px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        font-size: 3em;
+        line-height: 1.2em;
+    }
+
+    h1 span {
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: var(--green);
+        text-decoration-thickness: 3px;
+    }
+
+    .order-btn {
+        background-color: white;
+        border: none;
+        padding: 10px 15px;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 500;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .center { 
+        min-height: 200px;
+        width: 80%;
+        padding: 10px;
+        /*border: 1px solid white;*/
+    }
+
+    .header-img {
+        grid-area: b;
+        display: block; 
+        line-height: 0;   
+    }
+/* END of HEADER Section */
+
+
+/* SOCIAL MEDIA Section */
+    .grid3 {
+        grid-area: c;   
+        background-color: yellow;
+    }
+
+.grid4 {
+   grid-area: d;
+    background-color: green;
+}
+
+.grid5 {
+    grid-area: e;
+     background-color: grey;
+ }
+
+ .grid6 {
+    grid-area: f;
+     background-color: blue;
+ }
+
+ .grid7 {
+    grid-area: g;
+     background-color: purple;
+ }
+
+ .grid8 {
+    grid-area: h;
+     background-color: pink;
+ }
+
+ .grid9 {
+    grid-area: i;
+     background-color: green;
+ }
+
+ .grid10 {
+    grid-area: j;
+     background-color: orangered;
+ }
+
+
+
+
+
+
+ 
