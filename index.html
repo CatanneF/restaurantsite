@@ -24,52 +24,54 @@
 
     <div class="navigation-container">
         <div class="logo">
-            <span>CAFE<i class="material-icons">flash_on</i>BUZZ</span>
+            <a href="#"><span>CAFE<i class="material-icons">flash_on</i>BUZZ</span></a>
+            
         </div>
-        <div>
-            <a href="menu.html">Menu</a>  
-            <a href="contact.html">Contact</a>
-            <a class="order-cta" href="#">Order</a> 
+        <a href="#" class="menu-icon">
+            <i class="material-icons">menu</i>
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="menu.html">Menu</a>  </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="order-cta" href="#">Order</a> </li>
+            </ul>         
         </div>
-    </div>
-    
-         
+    </div>      
     
  </nav>
            
 
                   
             
-     <div id="grid-container">
+<div id="grid-container">
            
 
-            <div class="header">
-                <div class="center">
-                    <h1><span>ORDER ONLINE</span> FOR PICKUP</h1>
-                    <button class="order-btn">Click here</button>
-                </div>        
-            </div>
+        <div class="header">
+            <div class="center">
+                <h1><span>ORDER ONLINE</span> FOR PICKUP</h1>
+                <button class="order-btn">Click here</button>
+            </div>        
+        </div>
 
-            <div class="header-img">
-                <img src="img/img_cup.png" alt="brand coffee cup" width="100%">           
-            </div>
+        <div class="header-img">
+            <img src="img/img_cup.png" alt="brand coffee cup">           
+        </div>
 
 
-   
+        <div class="media-left">
+            <img src="img/cafe_1.jpg" alt="above shot of cafe counter">
+        </div>
 
-            <div class="media grid grid3">
-                <p>image one</p>
-            </div>
-
-            <div class="media grid grid4">
-                <h3>Follow us on our social media</h3>
-                <p>Facebook</p>
-                <p>Instagram</p>
-                <p>Twitter</p>
-            </div>
+        <div class="media-links">
+            <h3>Follow us on our social media</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
 
             <div class="media grid grid5">
-                <p>image two</p>
+                <img src="img/cafe_2.jpg" alt="inside of cafe table">
             </div>
 
   
@@ -108,8 +110,20 @@
 
   
 </div>
+
+<script>
+    let menuButton = document.getElementsByClassName('menu-icon')[0]
+    let navbarLinks = document.getElementsByClassName('nav-links')[0]
+
+    menuButton.addEventListener('click', () => {
+        console.log("clicked")
+        navbarLinks.classList.toggle('active')
+    })
+</script>
     
         
     
 </body>
+
+
 </html>
