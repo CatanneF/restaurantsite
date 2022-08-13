@@ -1,5 +1,5 @@
 :root {
-    --pink: #F1C0CC;
+    --pink: #ffb5c7;
     --black: #212020;
     --green: #7AFF80;
     --sans-font: 'Josefin Sans', sans-serif;
@@ -108,7 +108,7 @@ body{
 
     h1 {
         color: var(--pink);
-        padding-bottom: 60px;
+        padding-bottom: 40px;
         font-family: var(--sans-font);
         font-style: italic;
         font-size: 3em;
@@ -161,76 +161,170 @@ img {
 /* SOCIAL MEDIA Section */
     .media-left {
         grid-area: c;   
-        background-color: var(--black);  
-        max-height: 500px;     
+        background-color: var(--black); 
+        max-height: 600px;
+        min-height: 400px;     
     }
 
-.media-links {
-   grid-area: d;
-    background-color: var(--green);
-    text-align: center;
-    color: var(--black);
-    font-family: var(--mono-font);
+    .media-links {
+    grid-area: d;
+        background-color: var(--green);
+        text-align: center;
+        color: var(--black);
+        font-family: var(--mono-font);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 600px;
+        min-height: 400px;
+    }
+    
+/*H3*/    
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        font-family: var(--sans-font);
+        font-style: italic;
+        font-weight: 600;
+        max-width: 300px;
+        line-height: 1.5em;
+        color: white;    
+    }
+
+    .media-links a {
+        text-decoration: none;
+        color: var(--black);
+        font-size: .8em;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    .media-links a:hover {
+        color: var(--pink);
+    }
+
+    .media-right {
+        grid-area: e;
+        background-color: var(--black);
+        max-height: 600px;
+        min-height: 400px; 
+     }
+/* END of SOCIAL MEDIA Section*/
+
+/* START of ART and NEWSLETTER SIGNUP Section */
+
+ .art-block {
+    grid-area: f;
+     background-color: var(--black);
+     max-height: 600px;
+     min-height: 500px;
+     display: flex;   
+ }
+
+ .art-block img {
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+
+
+ .newsletter {
+    grid-area: g;
+    background-color: white;
     display: flex;
     flex-direction: column;
+    text-align: center; 
     justify-content: center;
     align-items: center;
-    max-height: 500px;
-}
+    min-height: 500px;
+     
+ }
 
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 80px;
-    text-transform: uppercase;
-    font-family: var(--sans-font);
-    font-style: italic;
-    font-weight: 600;
-    max-width: 300px;
-    line-height: 1.5em;
-    color: white;    
-}
-
-.media-links a {
-    text-decoration: none;
+ .newsletter h3{
     color: var(--black);
-    font-size: .8em;
-    line-height: 40px;
+    max-width: 600px;
+    margin-bottom: 40px;
+ }
+
+ input {
+    border: black 3px solid;
+    padding: 10px 5px;
+    text-align: center;
+    min-width: 250px;
+    font-family: var(--sans-font);
+    color: var(--black);
+    margin-bottom: 20px;
+ }
+
+ .newsletter button{
+    background-color: var(--green);
+    border: none;
+    padding: 8px 16px;
+    font-family: var(--mono-font);
+    font-weight: 500;
+    font-size: 1em;
     text-transform: uppercase;
-}
-
-.media-links a:hover {
-    color: var(--pink);
-}
-
-.grid5 {
-    grid-area: e;
-     background-color: grey;
-     max-height: 500px; 
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition-delay: .1s;
  }
+    .newsletter button:hover {
+        background-color: var(--black);
+        color: white;
+    }
 
- .grid6 {
-    grid-area: f;
-     background-color: blue;
- }
 
- .grid7 {
-    grid-area: g;
-     background-color: purple;
- }
+ /* END of ART and NEWSLETTER SIGNUP Section */
 
- .grid8 {
+ .footer-main {
     grid-area: h;
-     background-color: pink;
+     background-color: var(--pink);
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     height: 330px;
+     
  }
 
- .grid9 {
+ .footer-main h3{
+    color: var(--black);
+    padding-top: 50px;
+ }
+
+ .footer-loc {
     grid-area: i;
-     background-color: green;
+    background-color: var(--pink);
+    font-family: var(--mono-font);
+    font-size: 1em;
+    padding-top: 80px;
+    padding-left: 20px;
+    height: 250px;
  }
 
- .grid10 {
+ .footer-loc p{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+ }
+
+ .footer-hrs {
     grid-area: j;
-     background-color: orangered;
+    background-color: var(--pink);
+    font-family: var(--mono-font);
+    font-size: 1em;
+    padding-top: 80px; 
+    height: 250px;
+ }
+
+ .footer-hrs p{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
  }
 
 
