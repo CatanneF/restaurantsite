@@ -8,7 +8,7 @@
 
 body{
     margin: 0;
-    background-color: white;
+    /* background-color: white; */
 }
 
 #grid-container {
@@ -85,6 +85,7 @@ body{
             background-color: var(--black);
             color: white;
             margin-left: .8em;
+        
         }
         .nav-links .order-cta:hover {
             background-color: var(--pink);
@@ -105,7 +106,7 @@ body{
         align-items: center;  
         
     } 
-
+ /* H1 */
     h1 {
         color: var(--pink);
         padding-bottom: 40px;
@@ -180,9 +181,9 @@ img {
         min-height: 400px;
     }
     
-/*H3*/    
+ /*H3*/    
     h3 {
-        font-size: 1.5em;
+        font-size: 2em;
         margin-bottom: 80px;
         text-transform: uppercase;
         font-family: var(--sans-font);
@@ -215,123 +216,131 @@ img {
 
 /* START of ART and NEWSLETTER SIGNUP Section */
 
- .art-block {
-    grid-area: f;
-     background-color: var(--black);
-     max-height: 600px;
-     min-height: 500px;
-     display: flex;   
- }
-
- .art-block img {
-    width: 60%;
-    height: 70%;
-    margin: auto;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
- }
-
-
- .newsletter {
-    grid-area: g;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    justify-content: center;
-    align-items: center;
-    min-height: 500px;
-     
- }
-
- .newsletter h3{
-    color: var(--black);
-    max-width: 600px;
-    margin-bottom: 40px;
- }
-
- input {
-    border: black 3px solid;
-    padding: 10px 5px;
-    text-align: center;
-    min-width: 250px;
-    font-family: var(--sans-font);
-    color: var(--black);
-    margin-bottom: 20px;
- }
-
- .newsletter button{
-    background-color: var(--green);
-    border: none;
-    padding: 8px 16px;
-    font-family: var(--mono-font);
-    font-weight: 500;
-    font-size: 1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition-delay: .1s;
- }
-    .newsletter button:hover {
+    .art-block {
+        grid-area: f;
         background-color: var(--black);
-        color: white;
+        max-height: 600px;
+        min-height: 500px;
+        display: flex;   
+    }
+
+    .art-block img {
+        width: 50%;
+        height: 75%;
+        margin: auto;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
 
- /* END of ART and NEWSLETTER SIGNUP Section */
+    .newsletter {
+        grid-area: g;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+        
+    }
 
- .footer-main {
-    grid-area: h;
-     background-color: var(--pink);
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     height: 330px;
-     
- }
+    .newsletter h3{
+        color: var(--black);
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
 
- .footer-main h3{
-    color: var(--black);
-    padding-top: 50px;
- }
+    input {
+        border: black 3px solid;
+        padding: 10px 5px;
+        line-height: 20px;
+        text-align: center;
+        min-width: 300px;
+        font-family: var(--sans-font);
+        color: var(--black);
+        margin-bottom: 40px;
+    }
 
- .footer-loc {
-    grid-area: i;
-    background-color: var(--pink);
-    font-family: var(--mono-font);
-    font-size: 1em;
-    padding-top: 80px;
-    padding-left: 20px;
-    height: 250px;
- }
-
- .footer-loc p{
-    display: block;
-    margin: 0 auto;
-    width: 200px;
- }
-
- .footer-hrs {
-    grid-area: j;
-    background-color: var(--pink);
-    font-family: var(--mono-font);
-    font-size: 1em;
-    padding-top: 80px; 
-    height: 250px;
- }
-
- .footer-hrs p{
-    display: block;
-    margin: 0 auto;
-    width: 150px;
- }
+    .newsletter button{
+        background-color: var(--green);
+        border: none;
+        padding: 8px 24px;
+        font-family: var(--mono-font);
+        font-weight: 500;
+        font-size: 1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-bottom: 20px;
+        transition-delay: .1s;
+    }
+        .newsletter button:hover {
+            background-color: var(--black);
+            color: white;
+        }
 
 
+/* END of ART and NEWSLETTER SIGNUP Section */
+/* START of FOOTER */
 
- @media (max-width: 600px) {
+    .footer-main {
+        grid-area: h;
+        background-color: var(--pink);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 380px;
+        
+    }
+
+    .footer-main h3{
+        color: var(--black);
+        padding-top: 50px;
+    }
+
+    .footer-loc {
+        grid-area: i;
+        background-color: var(--pink);
+        font-family: var(--mono-font);
+        font-size: 1em;
+        padding-top: 80px;
+        padding-left: 20px;
+        height: 300px;
+    }
+
+    .footer-loc p{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .loc-two{
+        padding-top: 40px;
+    }
+
+    .footer-hrs {
+        grid-area: j;
+        background-color: var(--pink);
+        font-family: var(--mono-font);
+        font-size: 1em;
+        padding-top: 80px; 
+        height: 300px;
+    }
+
+    .footer-hrs p{
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
+
+/* END of FOOTER */
+
 
 /*RESPONSIVE NAVBAR FOR MOBILE */
+ @media (max-width: 600px) {
+
+
     nav {
         padding: 20px 20px 10px;
     }
@@ -368,12 +377,8 @@ img {
         text-align: center;
         padding: 20px 0px;
     }
-
-/* END OF RESPONSIVE NAV */
-
- 
-
  }
+/* END OF MOBILE RESPONSIVE NAV */
 
 
 
