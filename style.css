@@ -339,11 +339,49 @@ img {
 
 /* START OF MENU PAGE */
 
+#menu-container {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--black);
+    color: white;
+}
+
+.container > h1 {
+    color: white;
+    text-align: center;
+    padding: 80px; 
+}
+
+.order-btn-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ .order-btn-menu > button {
+    background-color: var(--green);
+    border: none;
+    font-family: var(--sans-font);
+    padding: 10px 15px;
+    position: fixed;
+    font-weight: bold;
+} 
+
+
+
+.menu-main {
+    padding: 40px;
+}
+
+.menu-section> h2 {
+    color: black;
+}
+
+
 /* END OF MENU PAGE */
 
 
 /* START OF CONTACT PAGE */
-    #contact-container {
+    .container {
         margin: 0;
         padding: 20px;
         background-color: var(--black);
