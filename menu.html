@@ -52,6 +52,76 @@
         <div class="menu-section">
             <h2>Beverages</h2>
         </div>
+        <div class="table-row">
+        <div class="table-block"">
+            <table>
+                <tr>
+                    <th style="width:70%;">COFFEE</th>
+                    <th style="padding-left:10px;">S</th>
+                    <th style="padding-left:10px;">L</th>
+                </tr>
+                <tr>
+                    <td >Iced Coffee</td><td>1.50</td><td>2.00</td>
+                </tr>
+                
+                <tr>
+                    <td>Cold Brew</td><td>1.50</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td>Americano</td><td>1.50</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td>Cappuchino</td><td>1.50</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td>Macchiato</td><td>1.50</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td>Latte</td><td>1.50</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td>Chai Latte</td><td>1.50</td><td>2.00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-block"">
+            <table>
+                <tr>
+                    <th style="width:70%;">TEA</th>
+                    <th style="padding-left:10px;">S</th>
+                    <th style="padding-left:10px;">L</th>
+                </tr>
+                <tr>
+                    <td >Hot Tea</td><td>1.50</td><td>2.00</td>
+                </tr>
+                
+                <tr>
+                    <td>Iced Tea</td><td>1.50</td><td>2.00</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold; padding: 40px 0px 10px 0px;">FLAVOR</td>
+                </tr>
+                <tr>
+                    <td>Cappuchino</td>
+                </tr>
+                <tr>
+                    <td>Macchiato</td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                </tr>
+                <tr>
+                    <td>Chai Latte</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+
+
+
+
+
         <hr>
         <div class="menu-section">
             <h2>Breakfast</h2>
@@ -80,6 +150,17 @@
             <p><b>S-S: </b>8am—4pm</p>
         </div>
     </div>
+
+
+    <script>
+        let menuButton = document.getElementsByClassName('menu-icon')[0]
+        let navbarLinks = document.getElementsByClassName('nav-links')[0]
+    
+        menuButton.addEventListener('click', () => {
+            console.log("clicked")
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
     
     
 </body>
