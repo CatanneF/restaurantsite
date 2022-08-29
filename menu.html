@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="style.css">
     <title>Cafe Buzz Menu</title>
 </head>
@@ -39,93 +40,124 @@
         </div>          
      </nav>
     
-     
+    <!-- MENU header -->
      <div class="container">
-            <h1>MENU</h1>   
-            
+            <h1>MENU</h1>            
     </div>
+
+    <!-- Order button -->
     <div class="order-btn-menu">
         <button>ORDER</button>
     </div>
+
     
     <div class="menu-main">
         <div class="menu-section">
             <h2>Beverages</h2>
         </div>
+        <!-- First Row -->
         <div class="table-row">
-        <div class="table-block"">
-            <table>
-                <tr>
-                    <th style="width:70%;">COFFEE</th>
-                    <th style="padding-left:10px;">S</th>
-                    <th style="padding-left:10px;">L</th>
-                </tr>
-                <tr>
-                    <td >Iced Coffee</td><td>1.50</td><td>2.00</td>
-                </tr>
-                
-                <tr>
-                    <td>Cold Brew</td><td>1.50</td><td>2.00</td>
-                </tr>
-                <tr>
-                    <td>Americano</td><td>1.50</td><td>2.00</td>
-                </tr>
-                <tr>
-                    <td>Cappuchino</td><td>1.50</td><td>2.00</td>
-                </tr>
-                <tr>
-                    <td>Macchiato</td><td>1.50</td><td>2.00</td>
-                </tr>
-                <tr>
-                    <td>Latte</td><td>1.50</td><td>2.00</td>
-                </tr>
-                <tr>
-                    <td>Chai Latte</td><td>1.50</td><td>2.00</td>
-                </tr>
-            </table>
-        </div>
-        <div class="table-block"">
-            <table>
-                <tr>
-                    <th style="width:70%;">TEA</th>
-                    <th style="padding-left:10px;">S</th>
-                    <th style="padding-left:10px;">L</th>
-                </tr>
-                <tr>
-                    <td >Hot Tea</td><td>1.50</td><td>2.00</td>
-                </tr>
-                
-                <tr>
-                    <td>Iced Tea</td><td>1.50</td><td>2.00</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold; padding: 40px 0px 10px 0px;">FLAVOR</td>
-                </tr>
-                <tr>
-                    <td>Cappuchino</td>
-                </tr>
-                <tr>
-                    <td>Macchiato</td>
-                </tr>
-                <tr>
-                    <td>Latte</td>
-                </tr>
-                <tr>
-                    <td>Chai Latte</td>
-                </tr>
-            </table>
-        </div>
+            <!-- Top Left menu -->
+            <div class="table-block"">
+                <table>
+                    <tr>
+                        <th style="width:70%;">COFFEE</th>
+                        <th class="sizing">S</th>
+                        <th class="sizing"">L</th>
+                    </tr>
+                    <tr><td >Hot Coffee</td><td>2.50</td><td>3.00</td></tr>
+                    <tr><td >Iced Coffee</td><td>2.50</td><td>3.00</td></tr>               
+                    <tr><td>Cold Brew</td><td>3.50</td><td>4.25</td></tr>
+                    <tr><td>Americano</td><td>3.00</td><td>3.50</td></tr>
+                    <tr><td>Cappuchino</td><td>3.50</td><td>4.25</td></tr>
+                    <tr><td>Macchiato</td><td>3.50</td><td>4.25</td></tr>
+                    <tr><td>Latte</td><td>3.50</td><td>4.25</td></tr>
+                    <tr><td>Chai Latte</td><td>3.00</td><td>3.50</td></tr>
+                    <tr><td>Matcha Latte</td><td>3.00</td><td>3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="coffee-add">ADD ESPRESSO</td><td class="coffee-add">+ .50</td>
+                    </tr>
+                    <tr class="coffee-add"><td>ADD SYRUP</td><td>+ .50</td></tr>
+                </table>
+            </div>
+
+            <!-- Top Right menu -->
+            <div class="table-block"">
+                <table>
+                    <tr>
+                        <th style="width:70%;">TEA</th>
+                        <th class="sizing">S</th>
+                        <th class="sizing">L</th>
+                    </tr>
+                    <tr><td >Hot Tea</td><td>2.00</td><td>3.00</td></tr>
+                    <tr><td>Iced Tea</td><td>2.50</td><td>3.50</td></tr>
+                    <tr>
+                        <td class="flavors">TEA FLAVORS</td>
+                    </tr>
+                    <tr><td>Black</td></tr>
+                    <tr><td>Green</td></tr>
+                    <tr><td>Earl Grey</td></tr>
+                    <tr><td>Rasberry</td></tr>
+                    <tr><td>Peach</td></tr>
+                    <tr><td>Mango</td></tr>               
+                </table>
+            </div>
         </div>
 
 
-
-
-
-
-        <hr>
         <div class="menu-section">
             <h2>Breakfast</h2>
+            <div class="table-row">
+                <div class="table-block">
+                    <table>
+                        <tr>
+                            <th style="width:85%;">MAINS</th>
+                            <th class="sizing">$</th>
+                        </tr>
+                        <tr><td >Bagel w/ Butter</td><td>2.50</td></tr>
+                        <tr><td >Bagel w/ Cream Cheese</td><td>3.00</td></tr> 
+                        <tr><td >Egg Sandwich w/ Cheese and Meat<p class="small">choice of sausage or bacon</p></td><td>7.50</td></tr>
+                        <tr><td >Breakfast Wrap <p class="small">with eggs, potatoes, peppers, and onions</p></td><td>7.50</td></tr> 
+                        <tr><td >Pancakes <p class="small">stack of 2, add another for +$2</p></td><td>5.50</td></tr>
+                        <tr><td >Waffle</td><td>6.50</td></tr>               
+                    </table>
+                </div>
 
+                <div class="table-block">
+                    <table>
+                        <tr>
+                            <th style="width:85%;">SIDES</th>
+                            <th class="sizing">$</th>
+                        </tr>
+                        <tr><td >Home Fries</td><td>4.50</td></tr>
+                        <tr><td >Bacon</td><td>3.00</td></tr> 
+                        <tr><td >Sausages</td><td>3.00</td></tr>
+                        <tr><td >Two Eggs</td><td>2.50</td></tr> 
+                        <tr><td >Toast</td><td>1.50</td></tr>
+                                     
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Bakery</h2>
+            <div class="table-row">
+                <div class="table-block">
+                    <table>
+                        <tr>
+                            <th style="width:85%;">ITEM</th>
+                            <th class="sizing">$</th>
+                        </tr>
+                        <tr><td >Muffin</td><td>4.50</td></tr>
+                        <tr><td >Scone</td><td>4.50</td></tr> 
+                        <tr><td >Croissant</td><td>3.50</td></tr>
+                        <tr><td >Cookie</td><td>2.50</td></tr>      
+                    </table>
+                </div>
+            </div>
         </div>
         
 
