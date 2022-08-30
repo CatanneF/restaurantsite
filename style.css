@@ -338,7 +338,6 @@ img {
 
 
 /* START OF MENU PAGE */
-
 #menu-container {
     margin: 0;
     padding: 20px;
@@ -361,16 +360,19 @@ img {
     background-color: var(--black);
     color: white;
     border: none;
-    font-family: var(--sans-font);
-    padding: 10px 15px;
-    position: fixed;
+    font-family: var(--mono-font);
     font-weight: bold;
+    font-size: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     cursor: pointer;
 } 
 
 .order-btn-menu > button:hover {
-    background-color: var(--pink);
-    color: white;
+    background-color: var(--green);
+    color: var(--black);
 }
 
 .menu-main {
@@ -381,7 +383,6 @@ img {
     color: black;
     margin-top: 60px;
 }
-
 
 .table-row {
     display: flex;
@@ -445,9 +446,7 @@ td {
     font-size: .8em;
     line-height: 0em;
 }
-
 /* END OF MENU PAGE */
-
 
 
 /* START OF CONTACT PAGE */
@@ -476,8 +475,7 @@ td {
         font-family: var(--mono-font);
         margin: 80px auto;
         text-transform: uppercase;
-        height: 800px;
-        
+        height: 800px;   
     }
 
     .contact-form  input {
@@ -571,19 +569,19 @@ td {
 
     .footer-contact {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);   
+        grid-template-columns: repeat(3, 1fr);   
         grid-template-areas: 
-        "h h h h i i i j j j";                   
+        "h i j";                   
     }
 
 /* END OF CONTACT PAGE */
-    
+/* END OF DESKTOP WIDTH */
 
+ /* MQ MEDIUM WIDTH */
 @media (max-width: 900px) {
 
     h1 {
-        font-size: 2em;
-        
+        font-size: 2em;  
     }
     h1 span {
         text-decoration-thickness: 2px;
@@ -609,17 +607,12 @@ td {
         flex-direction: column;
     }
     .table-block {
-        width: 100%;
-        
+        width: 100%; 
     }
-   
-
 }
+/* END OF MEDIUM WIDTH */
 
-
-
-
-/*RESPONSIVE NAVBAR FOR MOBILE */
+/*MQ MOBILE WIDTH */
  @media (max-width: 600px) {
 
 
@@ -662,18 +655,10 @@ td {
 
     #grid-container {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);   
+        grid-template-columns: repeat(1, 1fr);   
         grid-template-areas: 
-        "a a a a a a a a a a"
-        "b b b b b b b b b b"
-        "d d d d d d d d d d"
-        "c c c c c c c c c c"
-        "g g g g g g g g g g"
-        "e e e e e e e e e e"
-        "f f f f f f f f f f"
-        "h h h h h h h h h h"
-        "i i i i i i i i i i"
-        "j j j j j j j j j j";
+        "a""b""d""c""g"
+        "e""h""i""j";
     }
 
     .header {
@@ -682,8 +667,15 @@ td {
     .media-links {
         height: 450px;
     }
+    .art-block {
+        display: none;
+    }
     .footer-main {
-        height: 100px;
+        height: 150px;
+       
+    }
+    .footer-main > h2 {
+        padding-top: 80px;
     }
     .footer-loc {
         height: 200px;
@@ -691,10 +683,6 @@ td {
     .footer-hrs {
         height: 150px;
     }
-
-
-
-
 /* menu */
     th {
         font-size: 1em;
@@ -705,7 +693,8 @@ td {
     }
 /* contact */
     .contact-form > input {
-        width: 250px;}
+        width: 250px;
+    }
 
     #message {
         width: 250px;
@@ -719,7 +708,7 @@ td {
         "h" "i" "j"                 
     }
  }
-/* END OF MOBILE RESPONSIVE NAV */
+/* END OF MOBILE WIDTH */
 
 
 
